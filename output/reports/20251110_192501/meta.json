@@ -1,0 +1,32 @@
+{
+  "timestamp": "20251110_192501",
+  "model_selected": "RandomForest",
+  "model_scores": {
+    "LogisticRegression": {
+      "mean_auc": 0.9564768571428571,
+      "std_auc": 0.0015516951684910788
+    },
+    "RandomForest": {
+      "mean_auc": 0.9743280785714286,
+      "std_auc": 0.0014290886234140368
+    },
+    "GradientBoosting": {
+      "mean_auc": 0.97225705,
+      "std_auc": 0.001123316158132865
+    }
+  },
+  "rows": 45000,
+  "segments": 6,
+  "top_features": [
+    "previous_loan_defaults_on_file_Yes",
+    "previous_loan_defaults_on_file_No",
+    "loan_int_rate",
+    "DTI",
+    "log_income",
+    "log_loan_amount",
+    "credit_score",
+    "person_home_ownership_RENT",
+    "age",
+    "cred_hist_len"
+  ]
+}

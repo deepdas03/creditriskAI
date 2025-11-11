@@ -1,0 +1,26 @@
+{
+  "analyst1": [
+    "education",
+    "medical"
+  ],
+  "analyst2": [
+    "medical",
+    "debtconsolidation"
+  ],
+  "cro1": [
+    "*"
+  ],
+  "abc1": [
+    "*"
+  ],
+  "Deep": [
+    "*"
+  ],
+  "abc": [
+    "medical",
+    "debtconsolidation"
+  ],
+  "abcd": [
+    "*"
+  ]
+}

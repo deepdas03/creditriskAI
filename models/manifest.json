@@ -1,0 +1,35 @@
+{
+  "model_name": "RandomForest",
+  "timestamp": "2025-11-10T19:25:02.326023",
+  "rows": 45000,
+  "features": [
+    "age",
+    "DTI",
+    "log_loan_amount",
+    "log_income",
+    "loan_int_rate",
+    "credit_score",
+    "cred_hist_len",
+    "loan_purpose_canon",
+    "age_bucket",
+    "person_gender",
+    "person_education",
+    "person_home_ownership",
+    "loan_intent",
+    "previous_loan_defaults_on_file"
+  ],
+  "model_scores": {
+    "LogisticRegression": {
+      "mean_auc": 0.9564768571428571,
+      "std_auc": 0.0015516951684910788
+    },
+    "RandomForest": {
+      "mean_auc": 0.9743280785714286,
+      "std_auc": 0.0014290886234140368
+    },
+    "GradientBoosting": {
+      "mean_auc": 0.97225705,
+      "std_auc": 0.001123316158132865
+    }
+  }
+}

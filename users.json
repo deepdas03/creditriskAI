@@ -1,0 +1,37 @@
+{
+  "analyst1": {
+    "salt": "abc123",
+    "hash": "a24f9a8c6c965ae3a7a9a90a4e785aeb25c43da6e5c96cf59c85b5a10d865ac1",
+    "role": "Analyst"
+  },
+  "cro1": {
+    "salt": "xyz789",
+    "hash": "7bba73b0f1acb8c579d5086a39fa460e81d48c1dbcf58e7d3b3d9d77c95e4f9b",
+    "role": "CRO"
+  },
+  "abc1": {
+    "salt": "fddeb08689f61d3b",
+    "hash": "938ff145a936ca6de29dfc455ddfd2c35a1294c0accf7369de31c0d565a0d5f7",
+    "role": "CRO"
+  },
+  "analyst2": {
+    "salt": "714d95731f82981e",
+    "hash": "e7ded00418e564b5237e60852f63cc13f088cf5cf2f7eb72101ab89e09798240",
+    "role": "Analyst"
+  },
+  "Deep": {
+    "salt": "bfc831c6ceb60759",
+    "hash": "386b0b7390d067e41c735c936340e5918adf444d6a7905dc94f32ea080199f08",
+    "role": "CRO"
+  },
+  "abc": {
+    "salt": "08bfa207f6ea33ce",
+    "hash": "49dc860f2c5b19bdc10019c9581f720f433aaa07602cc26b2956abaf59df6f6f",
+    "role": "Analyst"
+  },
+  "abcd": {
+    "salt": "7478efa5dfb89e5c",
+    "hash": "b354cfbe3cf784c2163b1383a5526764f3225c177bbc931e6e49dcc52ab422bf",
+    "role": "CRO"
+  }
+}
