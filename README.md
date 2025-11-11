@@ -71,3 +71,97 @@ credit-risk-ai/
 └── report/
     ├── Credit_Risk_AI_Report.docx  # Detailed methodology report
     └── Credit_Risk_AI_Presentation.pptx  # Project presentation slides
+```
+
+
+```bash
+| Component                | Technology                          |
+| ------------------------ | ----------------------------------- |
+| **Frontend / Dashboard** | Streamlit (v1.26.1)                 |
+| **Backend / ML Engine**  | Python 3.10+                        |
+| **Visualization**        | Plotly                              |
+| **Data Handling**        | Pandas, NumPy                       |
+| **Machine Learning**     | Scikit-learn                        |
+| **AI Assistant**         | Hugging Face Transformers / Flan-T5 |
+| **Storage**              | JSON (user roles), CSV (datasets)   |
+| **Deployment**           | Streamlit Cloud (Community)         |
+```
+
+
+### 4️⃣ **User Roles**
+- **Analyst**: Restricted access to assigned loan sectors.  
+- **CRO (Chief Risk Officer)**: Full access to all datasets (`*` wildcard).  
+- Role-based login with encrypted credentials.
+
+### 5️⃣ **Upload and Analyze**
+- Users can upload new `.csv` files.
+- The app automatically recalculates metrics and regenerates graphs.
+
+### 6️⃣ **Threshold Simulation**
+- Adjust high and medium-risk thresholds dynamically.  
+- View how different risk ratios affect policy recommendations.
+
+---
+
+## ⚙️ Tech Stack
+
+| Component | Technology |
+|------------|-------------|
+| **Frontend / Dashboard** | Streamlit (v1.26.1) |
+| **Backend / Engine** | Python 3.10+ |
+| **Data Processing** | Pandas, NumPy |
+| **Visualization** | Plotly |
+| **Machine Learning** | Scikit-learn |
+| **Authentication** | Hashed credentials (users.json) |
+| **Deployment** | Streamlit Cloud |
+| **Storage** | CSV, JSON |
+
+---
+
+## 🧩 Methodology
+
+### 1️⃣ Dataset Preparation  
+- The base dataset (`labeled_c_dataset.csv`) includes:
+- Loan amount, purpose, PD, EAD, LGD, credit score, etc.
+- Preprocessing steps:
+- Cleaning missing data.
+- Encoding categorical variables.
+- Normalizing numerical features.
+
+### 2️⃣ ECL Computation  
+**Expected Credit Loss (ECL)** is calculated using:  
+\[
+ECL = EAD × PD × LGD
+\]
+
+Where:
+- **EAD (Exposure at Default)** → Amount exposed if the borrower defaults.  
+- **PD (Probability of Default)** → Likelihood that the borrower defaults.  
+- **LGD (Loss Given Default)** → % of loss after recovery efforts.  
+
+Each segment’s ECL is aggregated to estimate **total portfolio loss**.
+
+---
+
+### 3️⃣ Risk Segmentation
+
+| Risk Level | Condition | Recommended Action |
+|-------------|------------|--------------------|
+| High Risk | ECL/Exposure > 0.025 | Reduce disbursement, increase pricing |
+| Medium Risk | 0.01 < ECL/Exposure ≤ 0.025 | Tighten underwriting |
+| Low Risk | ECL/Exposure ≤ 0.01 | Maintain or expand lending |
+
+The app recalculates these ratios dynamically when the user adjusts thresholds in the sidebar.
+
+---
+
+### 4️⃣ Visualization Workflow
+
+| Visualization | Description |
+|----------------|--------------|
+| **ECL by Segment** | Bar chart showing ECL distribution across loan types. |
+| **PD Distribution** | Histogram for probability of default across borrowers. |
+| **ECL Curve** | Line chart: cumulative ECL vs cumulative exposure. |
+| **Segment Drilldown** | Scatter plot: PD vs EAD with bubble size = ECL. |
+
+🌐 **Live App:** [https://creditriskaii.streamlit.app/](https://creditriskaii.streamlit.app/)
