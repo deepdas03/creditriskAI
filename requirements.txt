@@ -144,7 +144,6 @@ pyttsx3==2.98
 pytweening==1.2.0
 pytz==2025.1
 pywhatkit==5.4
-pywin32==306
 pywinpty==2.0.12
 PyYAML==6.0.1
 pyzmq==25.1.2
@@ -219,3 +218,4 @@ joblib==1.2.0
 requests==2.31.0
 pyyaml==6.0
 python-dotenv==1.0.0
+
