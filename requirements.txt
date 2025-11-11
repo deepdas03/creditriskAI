@@ -182,9 +182,6 @@ threadpoolctl==3.6.0
 tinycss2==1.2.1
 tokenizers==0.21.1
 toml==0.10.2
-torch==2.6.0+cpu
-torchaudio==2.6.0+cpu
-torchvision==0.21.0+cpu
 tornado==6.4
 tqdm==4.67.1
 traitlets==5.14.1
@@ -218,4 +215,5 @@ joblib==1.2.0
 requests==2.31.0
 pyyaml==6.0
 python-dotenv==1.0.0
+
 
